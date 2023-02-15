@@ -1,0 +1,211 @@
+.homeScreenMain {
+    width: 100%;
+}
+
+
+.caraResize {
+    width: 600px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.vid {
+    position: fixed;
+}
+
+
+
+
+.fuzzIn {
+    animation-name: initOpac;
+    animation-duration: 1;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+}
+@keyframes initOpac {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.h1Res {
+    margin-top: 0;
+    font-family: arial;
+    font-size: 90px;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+    text-align: center;
+}
+.h1SecRes {
+    margin-top: 0;
+    font-family: arial;
+    font-size: 70px;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+    text-align: center;
+}
+.h1Loc {
+    margin-top: 300px;
+}
+.h1Loc2 {
+    margin-top: 100px;
+}
+.par {
+    font-family: arial;
+    font-size: 60px;
+    color: white;
+    text-shadow: 4px 4px black;
+    /* font-weight: bold; */
+}
+
+.flCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blurbCont {
+    /* margin-left: 30px; */
+    width: 40vw;
+    height: 16vh;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+    
+    background: rgb(178, 178, 178);
+    box-shadow: 2px 2px rgb(235, 238, 255);
+}
+
+.heightCh {
+    height: 20vh;
+}
+
+.moreTop {
+    margin-top: 30px;
+}
+.parSmall {
+    font-family: arial;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px gray;
+    /* font-weight: bold; */
+}
+
+.mainHome {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    /* background: grey; */
+}
+.topSection {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(13, 17, 9);
+}
+.marTopAndBot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.imgArea {
+    box-shadow: 2px 2px rgb(251, 248, 240, 0.4);
+}
+.aboutMeSection {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(13, 17, 9);
+}
+.skillsSection {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: orange;
+}
+.experienceSection {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: peru;
+}
+.projectsSection {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: peachpuff;
+}
+.contactSection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: red;
+}
