@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import html5 from '../../Resources/SkillsLogos/HTML5.png';
 import css3 from '../../Resources/SkillsLogos/CSS3.png';
@@ -31,9 +30,9 @@ function Skills() {
 
     return (
         <div className={css(styles.main)}>
-            <ScrollableAnchor id={'skillsSection'}>
+
                 <h1 className={css(styles.bigFont, styles.under)}>Skills</h1>
-            </ScrollableAnchor>
+
             <div className={css(styles.rowed)} >
 
                 <div className={css(styles.logoCont)}><img className={css(styles.smallerRes)} src={html5} alt='' /></div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import PortPic from '../../Resources/Resized.PNG';
 import BYUID from '../../Resources/Logos/BYUIdaho.png';
@@ -15,9 +14,7 @@ function NewAbout() {
 
     return (
         <div className={css(styles.mainArea)}>
-            <ScrollableAnchor id={'aboutSection'}>
                 <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
-            </ScrollableAnchor>
             <img src={PortPic} className={css(styles.imageSize)} />
             <div className={css(styles.infoContainer)}>
                 <div style={{ marginLeft: '30px', marginRight: '30px', fontSize: '20px' }}>

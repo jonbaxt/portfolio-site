@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import BackgroundSlideshow from 'react-background-slideshow';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css'
@@ -19,13 +17,11 @@ function Contact() {
     return (
         <div className={css(styles.main)}>
             <span id='Slides'> 
-                <BackgroundSlideshow
-                    images={[tech1, tech2, tech3, tech4, tech5, tech6]} />
+{/*                <BackgroundSlideshow
+                    images={[tech1, tech2, tech3, tech4, tech5, tech6]} />*/}
             </span>
             <div className={css(styles.middleBox, styles.bringToFront)}>
-                <ScrollableAnchor id={'contactSection'}>
                     <h1 className={css(styles.bigFont, styles.fontColoring)}>Contact</h1>
-                </ScrollableAnchor>
 
                 <p className={css(styles.textFormat, styles.fontColoring)}>Interested in my work and skills? Feel free to contact me.</p>
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import ServedUp from './ProjectsContents/ServedUpSurveys/ServedUp';
 import BIAClone from './ProjectsContents/BIAClone/BIAClone';
@@ -12,9 +11,7 @@ function Projects() {
 
     return (
         <div className={css(styles.main)}>
-            <ScrollableAnchor id={'projectsSection'}>
             <h1 className={css(styles.bigFont, styles.under)}>Projects</h1>
-            </ScrollableAnchor>
 
             <ServedUp />
             <BIAClone />

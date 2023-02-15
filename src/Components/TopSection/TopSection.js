@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import BackgroundSlideshow from 'react-background-slideshow';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import image1 from '../../Resources/Mountains.jpg';
 import city from '../../Resources/CityAtNight.jpg';
@@ -13,10 +11,12 @@ export default function TopSection() {
 
     return (
         <div className={css(styles.outer)}>
-            <ScrollableAnchor id={'introSection'}>
-                <p className={css(styles.hiddenForTag)}>Hidden</p>
-            </ScrollableAnchor>
-                <BackgroundSlideshow images={[image1, city, landscape, turkey, waterfall]} />z
+       {/*         <div style={{
+                 backgroundImage: image1,
+                 backgroundSize: '100%',
+                }} />
+*/}
+                {/*<BackgroundSlideshow images={[image1, city, landscape, turkey, waterfall]} />*/}
             <div className={css(styles.main)}>
                 <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>
 
@@ -31,6 +31,8 @@ const styles = StyleSheet.create({
     main: {
         width: '100%',
         height: '100vh',
+        backgroundImage: city,
+        backgroundSize: '100%',
         // background: 'green',
         display: 'flex',
         flexDirection: 'column',
@@ -74,8 +76,5 @@ const styles = StyleSheet.create({
     },
     outer: {
 
-    },
-    hiddenForTag: {
-        zIndex: '-10',
     }
 });
