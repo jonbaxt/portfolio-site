@@ -16,15 +16,10 @@ function Contact() {
 
     return (
         <div className={css(styles.main)}>
-            <span id='Slides'> 
-{/*                <BackgroundSlideshow
-                    images={[tech1, tech2, tech3, tech4, tech5, tech6]} />*/}
-            </span>
             <div className={css(styles.middleBox, styles.bringToFront)}>
                     <h1 className={css(styles.bigFont, styles.fontColoring)}>Contact</h1>
 
                 <p className={css(styles.textFormat, styles.fontColoring)}>Interested in my work and skills? Feel free to contact me.</p>
-
 
                 <p className={css(styles.textFormat, styles.fontColoring)}>jonbaxt@gmail.com</p>
                 <div className={css(styles.linksBox)} >
@@ -44,10 +39,8 @@ const styles = StyleSheet.create({
     main: {
         width: '100%',
         height: '100vh',
-        background: 'transparent',
-        // background: 'pink',
-        // borderTop: '3px dotted green',
-        // borderBottom: '3px dotted green',
+        backgroundImage: `url(${tech1})`,
+        backgroundSize: '100%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -61,7 +54,8 @@ const styles = StyleSheet.create({
         // background: 'rgb(248, 248, 255)',
         boxShadow: '1px 1px 9px grey',
         width: '90%',
-        height: '400px',
+        // height: '400px',
+        paddingBottom: '40px',
     },
     bigFont: {
         // zIndex: '10',

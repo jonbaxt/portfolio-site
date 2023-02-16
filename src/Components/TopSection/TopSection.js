@@ -11,12 +11,6 @@ export default function TopSection() {
 
     return (
         <div className={css(styles.outer)}>
-       {/*         <div style={{
-                 backgroundImage: image1,
-                 backgroundSize: '100%',
-                }} />
-*/}
-                {/*<BackgroundSlideshow images={[image1, city, landscape, turkey, waterfall]} />*/}
             <div className={css(styles.main)}>
                 <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>
 
@@ -31,9 +25,6 @@ const styles = StyleSheet.create({
     main: {
         width: '100%',
         height: '100vh',
-        backgroundImage: city,
-        backgroundSize: '100%',
-        // background: 'green',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -75,6 +66,7 @@ const styles = StyleSheet.create({
         marginTop: '70px',
     },
     outer: {
-
+        backgroundImage: `url(${city})`,
+        backgroundSize: '100vw',
     }
 });
