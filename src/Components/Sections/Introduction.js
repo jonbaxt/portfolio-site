@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import BackgroundSlideshow from 'react-background-slideshow';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import image1 from '../../Resources/Mountains.jpg';
 import city from '../../Resources/CityAtNight.jpg';
@@ -14,9 +13,9 @@ export default function Introduction() {
 
     return (
         <div className={css(styles.outer)}>
-            <ScrollableAnchor id={'introSection'}>
+            <a name={'introSection'}></a>
                 <p className={css(styles.hiddenForTag)}>Hidden</p>
-            </ScrollableAnchor>
+
             <div className={css(styles.main)}>
                 <BackgroundSlideshow images={[image1, city, landscape, turkey, waterfall]} />
                 <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>

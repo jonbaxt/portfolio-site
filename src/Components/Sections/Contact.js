@@ -6,18 +6,19 @@ import './Contact.css'
 
 
 import tech1 from '../../Resources/ContactPics/tech1.jpg';
-import tech2 from '../../Resources/ContactPics/tech2.jpg';
-import tech3 from '../../Resources/ContactPics/tech3.jpg';
-import tech4 from '../../Resources/ContactPics/tech4.jpg';
-import tech5 from '../../Resources/ContactPics/tech5.jpg';
-import tech6 from '../../Resources/ContactPics/tech6.jpg';
+// import tech2 from '../../Resources/ContactPics/tech2.jpg';
+// import tech3 from '../../Resources/ContactPics/tech3.jpg';
+// import tech4 from '../../Resources/ContactPics/tech4.jpg';
+// import tech5 from '../../Resources/ContactPics/tech5.jpg';
+// import tech6 from '../../Resources/ContactPics/tech6.jpg';
 
 function Contact() {
 
     return (
         <div className={css(styles.main)}>
             <div className={css(styles.middleBox, styles.bringToFront)}>
-                    <h1 className={css(styles.bigFont, styles.fontColoring)}>Contact</h1>
+                <a href='/' name={'contactSection'} style={{visibility: 'hidden'}}>Hidden</a>
+                <h1 className={css(styles.bigFont, styles.fontColoring)}>Contact</h1>
 
                 <p className={css(styles.textFormat, styles.fontColoring)}>Interested in my work and skills? Feel free to contact me.</p>
 

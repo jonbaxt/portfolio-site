@@ -14,14 +14,15 @@ function NewAbout() {
 
     return (
         <div className={css(styles.mainArea)}>
-                <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
-            <img src={PortPic} className={css(styles.imageSize)} />
+            <a href='/' name={'aboutSection'} style={{visibility: 'hidden'}}>Hidden</a>
+            <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
+            <img src={PortPic} alt={'JonathanBaxter'} className={css(styles.imageSize)} />
             <div className={css(styles.infoContainer)}>
                 <div style={{ marginLeft: '30px', marginRight: '30px', fontSize: '20px' }}>
                     <div className={css(styles.infoContainer2)} >
-                        <img src={BYUID} className={css(styles.imageSize2)} />
-                        <img src={Uvu} className={css(styles.imageSize2)} />
-                        <img src={devMtn} className={css(styles.imageSize2)} />
+                        <img src={BYUID} alt='BYUIdahoPhoto' className={css(styles.imageSize2)} />
+                        <img src={Uvu} alt='UVUPhoto' className={css(styles.imageSize2)} />
+                        <img src={devMtn} alt='DevMountPhoto' className={css(styles.imageSize2)} />
                     </div>
                     <p>I'm a Web/Software Developer specializing in Javascript, Python, React, HTML, CSS and many other languages and frameworks based off courses taken at DevMountain, UVU and knowledge I've attained while working with technology.</p>
                     <br></br>
@@ -29,9 +30,9 @@ function NewAbout() {
                     <br></br>
                     <p>I study coding independently and have taken courses from UVU and DevMountain to enhance my skills as a developer. I am always looking for ways to improve and gain new abilities and skills.</p>
                     <div className={css(styles.infoContainer2)} >
-                        <img src={UtahSeal} className={css(styles.imageSize2)} />
-                        <img src={bbw} className={css(styles.imageSize2)} />
-                        <img src={gt} className={css(styles.imageSize2)} />
+                        <img src={UtahSeal} alt={'UtahSeal'} className={css(styles.imageSize2)} />
+                        <img src={bbw} alt={'BrightBridgeWeib'} className={css(styles.imageSize2)} />
+                        <img src={gt} alt={'GideonTaylor'} className={css(styles.imageSize2)} />
                     </div>
                 </div>
             </div>

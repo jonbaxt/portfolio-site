@@ -1,16 +1,17 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-import image1 from '../../Resources/Mountains.jpg';
+// import image1 from '../../Resources/Mountains.jpg';
 import city from '../../Resources/CityAtNight.jpg';
-import landscape from '../../Resources/LandScape-Riccardo-Chiarini.jpg'
-import turkey from '../../Resources/turkey.jpg';
-import waterfall from '../../Resources/waterfall.jpg';
+// import landscape from '../../Resources/LandScape-Riccardo-Chiarini.jpg'
+// import turkey from '../../Resources/turkey.jpg';
+// import waterfall from '../../Resources/waterfall.jpg';
 
 export default function TopSection() {
 
     return (
         <div className={css(styles.outer)}>
+            <a href='/' name={'introSection'} style={{visibility: 'hidden'}}>Hidden</a>
             <div className={css(styles.main)}>
                 <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>
 

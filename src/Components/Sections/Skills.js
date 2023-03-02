@@ -30,8 +30,8 @@ function Skills() {
 
     return (
         <div className={css(styles.main)}>
-
-                <h1 className={css(styles.bigFont, styles.under)}>Skills</h1>
+            <a href='/' name={'skillsSection'} style={{visibility: 'hidden'}}>Hidden</a>
+            <h1 className={css(styles.bigFont, styles.under)}>Skills</h1>
 
             <div className={css(styles.rowed)} >
 

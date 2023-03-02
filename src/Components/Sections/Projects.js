@@ -3,21 +3,22 @@ import { StyleSheet, css } from 'aphrodite';
 
 import ServedUp from './ProjectsContents/ServedUpSurveys/ServedUp';
 import BIAClone from './ProjectsContents/BIAClone/BIAClone';
-import ParentalGaming from './ProjectsContents/ParentalGaming/ParentalGaming';
-import NSCClone from './ProjectsContents/NSCClone/NSCClone';
-import InventoryWarehouse from './ProjectsContents/InventoryWarehouse/InventoryWarehouse';
+// import ParentalGaming from './ProjectsContents/ParentalGaming/ParentalGaming';
+// import NSCClone from './ProjectsContents/NSCClone/NSCClone';
+// import InventoryWarehouse from './ProjectsContents/InventoryWarehouse/InventoryWarehouse';
 
 function Projects() {
 
     return (
         <div className={css(styles.main)}>
+            <a href='/' name={'projectsSection'} style={{visibility: 'hidden'}}>Hidden</a>
             <h1 className={css(styles.bigFont, styles.under)}>Projects</h1>
 
             <ServedUp />
             <BIAClone />
-            <InventoryWarehouse />
-            <ParentalGaming />
-            <NSCClone />
+            {/*<InventoryWarehouse />*/}
+            {/*<ParentalGaming />*/}
+            {/*<NSCClone />*/}
         </div>
     )
 }

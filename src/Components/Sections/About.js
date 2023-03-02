@@ -14,9 +14,9 @@ function About() {
 
     return (
         <div className={css(styles.aboutMain)}>
-            <ScrollableAnchor id={'aboutSection'}>
-                <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
-            </ScrollableAnchor>
+            <a name={'aboutSection'}>
+            </a>
+            <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
             <div className={css(styles.flRow, styles.reverseWrapper)} >
                 <div className={css(styles.container)}>
                     <p className={css(styles.textBoxText)}>{aboutInfo1()}</p>
