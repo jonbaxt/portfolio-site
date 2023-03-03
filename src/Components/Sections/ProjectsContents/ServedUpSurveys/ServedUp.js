@@ -9,7 +9,7 @@ function ServedUp() {
         <div className={css(styles.main)}>
             <div className={css(styles.container)}>
                 <h1 className={css(styles.headerWords, styles.underline)}>Served Up Surveys</h1>
-                <a className={css(styles.linkLine)} href={liveSiteLink()} target='_blank' ><p className={css(styles.linkStyle)}>Live Site Link</p></a>
+{/*                <a className={css(styles.linkLine)} href={liveSiteLink()} target='_blank' ><p className={css(styles.linkStyle)}>Live Site Link</p></a>*/}
 
                 <p className={css(styles.paragraphs)}>{servedUp1()}</p>
                 <p className={css(styles.paragraphs)}>{servedUp2()}</p>

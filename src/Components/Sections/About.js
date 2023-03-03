@@ -7,6 +7,7 @@ import BYUID from '../../Resources/Logos/BYUIdaho.png';
 import UtahSeal from '../../Resources/Logos/UtahSeal.png';
 import Uvu from '../../Resources/Logos/UVU.png';
 import devMtn from '../../Resources/Logos/devLogo.png';
+import redSky from '../../Resources/Logos/RedSkyEngineeringLogoWide.webp';
 
 import { aboutInfo1, aboutInfo2, aboutInfo3, aboutInfo4 } from './ChildComponents/AboutContent';
 
@@ -35,10 +36,10 @@ function About() {
                 <div className={css(styles.container)}>
                     <p className={css(styles.textBoxText)}>{aboutInfo3()}</p>
                 </div>
-                <img className={css(styles.logoStyleUvu)} src={Uvu} alt='' />
+                <img className={css(styles.logoStyleUvu)} src={Uvu} alt='UVU' />
             </div>
             <div className={css(styles.flRow, styles.wrapper)} >
-                <img className={css(styles.logoStyleUvu)} src={devMtn} alt='' />
+                <img className={css(styles.logoStyleUvu)} src={devMtn} alt='DevMount' />
                 <div className={css(styles.container)}>
                     <p className={css(styles.textBoxText)}>{aboutInfo4()}</p>
                 </div>

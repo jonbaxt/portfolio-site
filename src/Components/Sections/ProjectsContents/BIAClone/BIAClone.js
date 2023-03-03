@@ -8,7 +8,7 @@ function BIAClone() {
         <div className={css(styles.main)}>
             <div className={css(styles.container)} >
                 <h1 className={css(styles.headerWords, styles.underline)}>Build In Amsterdam Clone</h1>
-                <a className={css(styles.linkLine)} href={BIALiveSiteLink()} target='_blank'><p className={css(styles.linkStyle)}>Live Site Link</p></a>
+{/*                <a className={css(styles.linkLine)} href={BIALiveSiteLink()} target='_blank'><p className={css(styles.linkStyle)}>Live Site Link</p></a>*/}
 
                 <p className={css(styles.paragraphs)}>{BIAText1()}</p>
                 <p className={css(styles.paragraphs)}>{BIAText2()}</p>
