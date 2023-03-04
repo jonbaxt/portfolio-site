@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css'
 
 
@@ -25,10 +25,12 @@ function Contact() {
                 <p className={css(styles.textFormat, styles.fontColoring)}>jonbaxt@gmail.com</p>
                 <div className={css(styles.linksBox)} >
                     <a href='https://www.linkedin.com/in/jonbaxt/' rel="noopener noreferrer" target='_blank' >
-                        <FontAwesomeIcon className={css(styles.linkSizing)} icon={faLinkedin} />
+                        LinkedIn
+                        {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faLinkedin} />*/}
                     </a>
                     <a href='https://github.com/jonbaxt' rel="noopener noreferrer" target='_blank' >
-                        <FontAwesomeIcon className={css(styles.linkSizing)} icon={faGithub} />
+                        Github
+                        {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faGithub} />*/}
                     </a>
                 </div>
             </div>
