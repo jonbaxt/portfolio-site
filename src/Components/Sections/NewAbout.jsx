@@ -65,7 +65,7 @@ function NewAbout() {
                     <div className={css(styles.spaced)}>
                         <p>Red Sky Technologies</p>
                         <p>January 2022 - February 2023</p>
-                        <p>Roles: Caregiver, Program Lead</p>
+                        <p>Roles: Full Stack Developer / Engineer</p>
                         <p>Company Tech Stack: React, Javascript, Typescript, C#</p>
                     </div>
                 </div>
