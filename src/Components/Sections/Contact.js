@@ -12,6 +12,9 @@ import tech1 from '../../Resources/ContactPics/tech1.jpg';
 // import tech5 from '../../Resources/ContactPics/tech5.jpg';
 // import tech6 from '../../Resources/ContactPics/tech6.jpg';
 
+import linkedin from '../../Resources/svgs/Linkedin-logo.png';
+import github from '../../Resources/svgs/github.png';
+
 function Contact() {
 
     return (
@@ -25,11 +28,13 @@ function Contact() {
                 <p className={css(styles.textFormat, styles.fontColoring)}>jonbaxt@gmail.com</p>
                 <div className={css(styles.linksBox)} >
                     <a href='https://www.linkedin.com/in/jonbaxt/' rel="noopener noreferrer" target='_blank' >
-                        LinkedIn
+                        <img src={linkedin} className={css(styles.svg2)} />
+
+                        {/*LinkedIn*/}
                         {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faLinkedin} />*/}
                     </a>
                     <a href='https://github.com/jonbaxt' rel="noopener noreferrer" target='_blank' >
-                        Github
+                        <img src={github} className={css(styles.svg)} />
                         {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faGithub} />*/}
                     </a>
                 </div>
@@ -113,6 +118,31 @@ const styles = StyleSheet.create({
             color: 'darkgray',
         },
     },
+    svg: {
+        marginLeft: '60px',
+        marginRight: '60px',
+        width: '100px',
+        height: '100px',
+        cursor: 'pointer',
+        color: 'white',
+        // fontSize: '60px',
+        ':hover': {
+            color: 'darkgray',
+        },
+    },
+    svg2: {
+        marginLeft: '60px',
+        marginRight: '60px',
+        width: '180px',
+        height: '100px',
+        cursor: 'pointer',
+        color: 'white',
+        // fontSize: '60px',
+        ':hover': {
+            color: 'darkgray',
+        },
+    },
 });
+
 
 export default Contact;
