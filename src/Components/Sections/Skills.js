@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
         margin: '10px',
         width: '200px',
         height: '200px',
-        background: 'rgba(255, 108, 13, 0.4)',
+        background: 'rgba(13,255,186,0.4)',
         boxShadow: '1px 1px 9px grey',
     },
     rowed: {

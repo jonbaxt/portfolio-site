@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         zIndex: '100',
     },
     middleBox: {
-        background: 'rgba(255, 108, 13, 0.7)',
+        background: 'rgba(13,255,186,0.4)',
         // background: 'rgb(248, 248, 255)',
         boxShadow: '1px 1px 9px grey',
         width: '90%',

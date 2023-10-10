@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
+import './NewAbout.css';
 
 import PortPic from '../../Resources/Resized.PNG';
+import NewPortPic from '../../Resources/LinkedinNewPhoto.jpg';
 import BYUID from '../../Resources/Logos/BYUIdaho.png';
 import UtahSeal from '../../Resources/Logos/UtahSeal.png';
 import Uvu from '../../Resources/Logos/UVU.png';
@@ -9,6 +11,7 @@ import devMtn from '../../Resources/Logos/devLogo.png';
 import bbw from '../../Resources/Logos/bbwlogo.png';
 import gt from '../../Resources/Logos/GideonTaylorAbbreviated.jpg'
 import redSky from '../../Resources/Logos/RedSkyEngineeringLogoWide.webp';
+import acbl from '../../Resources/Logos/ACBLLogo.png';
 
 
 function NewAbout() {
@@ -17,25 +20,52 @@ function NewAbout() {
         <div className={css(styles.mainArea)}>
             <a href='/' name={'aboutSection'} style={{visibility: 'hidden'}}>Hidden</a>
             <h1 className={css(styles.bigFont, styles.underline)}>About</h1>
-            <img src={PortPic} alt={'JonathanBaxter'} className={css(styles.imageSize)} />
+            <img src={NewPortPic} alt={'JonathanBaxter'} className={css(styles.imageSize)} />
             <div className={css(styles.infoContainer)}>
                 <div style={{ marginLeft: '30px', marginRight: '30px', fontSize: '20px' }}>
+                    <p>
+                        I'm a jack of all trades Software Developer/Engineer. I have been actively working
+                        in the industry since 2018. Before embarking into development I spent years learning
+                        various coding languages and best practices with
+                        courses taken at DevMountain, UVU, as well attained from personal research and growth.
+                    </p>
                     <div className={css(styles.infoContainerWithPadding)} >
-                        <img src={BYUID} alt='BYUIdahoPhoto' className={css(styles.imageSize2)} />
-                        <img src={Uvu} alt='UVUPhoto' className={css(styles.imageSize2)} />
-                        <img src={devMtn} alt='DevMountPhoto' className={css(styles.imageSize2)} />
+                        <img src={BYUID} alt='BYUIdahoPhoto' className={css(styles.imageSize4)} />
+                        <img src={Uvu} alt='UVUPhoto' className={css(styles.imageSize4)} />
+                        <img src={devMtn} alt='DevMountPhoto' className={css(styles.imageSize4)} />
                     </div>
-                    <p>I'm a Web/Software Developer specializing in Javascript, Python, React, HTML, CSS and many other languages and frameworks based off courses taken at DevMountain, UVU and knowledge I've attained while working with technology.</p>
+                    <p>
+                        With each job I have had the opportunity to expand my knowledge base. I started out with
+                        a solid backbone of developing with Javascript, Python, React, Redux, HTML, CSS and ExpressJS.
+                        Since then my knowledge has grown to include TypeScript, Python, PHP, Laravel, C#, .NET Support
+                        and much more.
+                    </p>
+
+{/*                    <p>I'm a Web/Software Developer specializing in Javascript, Python, React, HTML, CSS and
+                        many other languages and frameworks based off courses taken at DevMountain, UVU and knowledge
+                        I've attained while working with technology.</p>
                     <br></br>
-                    <p>My work ethic and dedication to delivering quality comes from a unique background of skills I acquired prior to entering into Development. I worked with the State of Utah in the department of human services using my Bachelors of Science in Sociology from BYU-Idaho, which helped me learn skills in customer care and team building skills.</p>
+                    <p>My work ethic and dedication to delivering quality comes from a unique background of skills I
+                        acquired prior to entering into Development. I worked with the State of Utah in the department
+                        of human services using my Bachelors of Science in Sociology from BYU-Idaho, which helped me
+                        learn skills in customer care and team building skills.</p>*/}
                     <br></br>
-                    <p>I study coding independently and have taken courses from UVU and DevMountain to enhance my skills as a developer. I am always looking for ways to improve and gain new abilities and skills.</p>
+                    <p>
+                        I value being a life long learner by continuously boosting my knowledge with the latest best practices
+                        that are introduced to the world of development.
+                    </p>
+{/*
+                    <p>I study coding independently and have taken courses from UVU and DevMountain to enhance my skills
+                        as a developer. I am always looking for ways to improve and gain new abilities and skills.</p>
+*/}
                 </div>
             </div>
 
                 <h3 className={css(styles.midFont, styles.underline, styles.centerText)}>Work History</h3>
                 <div className={css(styles.infoContainerCentered)}>
-                    <img src={UtahSeal} alt={'UtahSeal'} className={css(styles.imageSize4)} />
+                    <div className={'imageContainer'}>
+                        <img src={UtahSeal} alt={'UtahSeal'} className={'imageSize'} />
+                    </div>
                     <div className={css(styles.spaced)}>
                         <p>State of Utah</p>
                         <p>2011-2020</p>
@@ -43,7 +73,9 @@ function NewAbout() {
                     </div>
                 </div>
                 <div className={css(styles.infoContainerCentered)}>
-                    <img src={bbw} alt={'BrightBridgeWeib'} className={css(styles.imageSize4)} />
+                    <div className={'imageContainer'}>
+                        <img src={bbw} alt={'BrightBridgeWeib'} className={'imageSize'} />
+                    </div>
                     <div className={css(styles.spaced)}>
                         <p>Bright Bridge Web LLC</p>
                         <p>December 2018 - March 2020</p>
@@ -52,7 +84,9 @@ function NewAbout() {
                     </div>
                 </div>
                 <div className={css(styles.infoContainerCentered)}>
-                    <img src={gt} alt={'GideonTaylor'} className={css(styles.imageSize4)} />
+                    <div className={'imageContainer'}>
+                        <img src={gt} alt={'GideonTaylor'} className={'imageSize'} />
+                    </div>
                     <div className={css(styles.spaced)}>
                         <p>Gideon Taylor Consulting LLC</p>
                         <p>May 2020 - January 2022</p>
@@ -61,12 +95,25 @@ function NewAbout() {
                     </div>
                 </div>
                 <div className={css(styles.infoContainerCentered)}>
-                    <img src={redSky} alt={'RedSky'} className={css(styles.imageSize3)} />
+                    <div className={'imageContainer'}>
+                        <img src={redSky} alt={'RedSky'} className={'imageSize'} />
+                    </div>
                     <div className={css(styles.spaced)}>
                         <p>Red Sky Technologies</p>
                         <p>January 2022 - February 2023</p>
                         <p>Roles: Full Stack Developer / Engineer</p>
                         <p>Company Tech Stack: React, Javascript, Typescript, C#</p>
+                    </div>
+                </div>
+                <div className={css(styles.infoContainerCentered)}>
+                    <div className={'imageContainer'}>
+                       <img src={acbl} alt={'ACBL'} className={'imageSize'} />
+                    </div>
+                    <div className={css(styles.spaced)}>
+                        <p>American Contract Bridge League (ACBL)</p>
+                        <p>May 2023 - Present</p>
+                        <p>Roles: Software Developer</p>
+                        <p>Company Tech Stack: PHP, Laravel, Zend, Python, Vue, React, Javascript, Typescript, mySQL, Postgresql and more</p>
                     </div>
                 </div>
 
@@ -211,7 +258,7 @@ const styles = StyleSheet.create({
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
         fontSize: '20px',
     },
     spaced: {
