@@ -1,11 +1,54 @@
+.aboutMain {
+    justify-content: center;
+    text-align: center;
+}
+
 .imageContainer {
-    width: 320px;
-    border: 1px solid black;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
+.centered {
+    text-align: center;
+}
+
 .imageSize {
     width: 312px;
+}
+
+@media screen and (max-width: 400px) {
+    .imageSize {
+        width: 268px;
+    }
+}
+
+.workSectionAsGrid {
+    display: grid;
+    grid-template-areas: '1 1';
+    grid-gap: 16px;
+    grid-auto-columns: auto;
+}
+
+.parrallaxArea {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.workContainerTitle {
+    width: 40%;
+    margin: 16px auto 0;
+    background: rgba(13,255,186,0.8);
+    border-radius: 16px;
+}
+
+.workContainer {
+    width: 80%;
+    margin: 24px auto;
+    background: rgba(13,255,186,0.8);
+    border-radius: 16px;
+    padding: 24px 0;
 }

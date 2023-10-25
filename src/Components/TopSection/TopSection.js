@@ -1,23 +1,25 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-
-// import image1 from '../../Resources/Mountains.jpg';
 import city from '../../Resources/CityAtNight.jpg';
-// import landscape from '../../Resources/LandScape-Riccardo-Chiarini.jpg'
-// import turkey from '../../Resources/turkey.jpg';
-// import waterfall from '../../Resources/waterfall.jpg';
+import backgroundVideo from '../../Resources/BackgroundVideos/SoftSlowMotionSideBySide.mp4';
 
 export default function TopSection() {
 
     return (
-        <div className={css(styles.outer)}>
-            <a href='/' name={'introSection'} style={{visibility: 'hidden'}}>Hidden</a>
-            <div className={css(styles.main)}>
-                <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>
+        <div className={css(styles.main)}>
+            <div style={{position: 'absolute', zIndex: 1000, top: 0}}>
+                <a href='/' name={'introSection'} style={{visibility: 'hidden'}}>Hidden</a>
+                <div className={css(styles.main)}>
+                    <h1 className={css(styles.bigFont)}>Jonathan Baxter</h1>
 
-                <h1 className={css(styles.lessBig, styles.gapBetween)}>Software & Web</h1>
-                <h1 className={css(styles.lessBig, styles.gapBetween)}>Development</h1>
+                    <h1 className={css(styles.lessBig, styles.gapBetween)}>Software & Web</h1>
+                    <h1 className={css(styles.lessBig, styles.gapBetween)}>Development</h1>
+                </div>
             </div>
+        <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg" style={{width: '100%', zIndex: -1}}>
+            <source src={backgroundVideo} type="video/mp4" style={{zIndex: -1}} />
+
+        </video>
         </div>
     )
 }
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     bigFont: {
         zIndex: '10',

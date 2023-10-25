@@ -1,43 +1,7 @@
-
-/*
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-*/
-
+import Route from './route.js';
 import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import "animate.css/animate.min.css";
-
-import TopSection from './Components/TopSection/TopSection';
-import NewAbout from './Components/Sections/NewAbout';
-// import About from './Components/Sections/About';
-import Skills from './Components/Sections/Skills';
-import Projects from './Components/Sections/Projects';
-import Contact from './Components/Sections/Contact';
-
 import './App.css';
 
 class App extends Component {
@@ -45,26 +9,21 @@ class App extends Component {
     return (
         <div className={css(styles.universalStyling)}>
           <div className={css(styles.navMain)}>
-            <a className={css(styles.linkStyled)} href='#introSection'>Jonathan Baxter</a>
+            <a className={css(styles.linkStyled)} href='/'>Jonathan Baxter</a>
             <div>
-              <a className={css(styles.linkStyled)} href='#aboutSection'>About</a>
+              <a className={css(styles.linkStyled)} href='/about'>About</a>
 
-              <a className={css(styles.linkStyled)} href='#skillsSection'>Skills</a>
+              <a className={css(styles.linkStyled)} href='/skills'>Skills</a>
 
-              <a className={css(styles.linkStyled)} href='#projectsSection'>Projects</a>
+              <a className={css(styles.linkStyled)} href='/projects'>Projects</a>
 
-              <a className={css(styles.linkStyled)} href='#contactSection'>Contact</a>
+              <a className={css(styles.linkStyled)} href='/contact'>Contact</a>
 
             </div>
           </div>
-          <TopSection />
-          <NewAbout />
-          {/* <About /> */}
-          <Skills />
-          <Projects />
-
-
-          <Contact />
+          <div>
+            {Route}
+          </div>
         </div>
     );
   }

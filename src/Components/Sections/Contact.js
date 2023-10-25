@@ -1,26 +1,15 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css'
-
-
-import tech1 from '../../Resources/ContactPics/tech1.jpg';
-// import tech2 from '../../Resources/ContactPics/tech2.jpg';
-// import tech3 from '../../Resources/ContactPics/tech3.jpg';
-// import tech4 from '../../Resources/ContactPics/tech4.jpg';
-// import tech5 from '../../Resources/ContactPics/tech5.jpg';
-// import tech6 from '../../Resources/ContactPics/tech6.jpg';
-
 import linkedin from '../../Resources/svgs/Linkedin-logo.png';
 import github from '../../Resources/svgs/github.png';
+import backgroundVideoContact from '../../Resources/BackgroundVideos/Ripples.mp4';
 
 function Contact() {
 
     return (
         <div className={css(styles.main)}>
-            <div className={css(styles.middleBox, styles.bringToFront)}>
-                <a href='/' name={'contactSection'} style={{visibility: 'hidden'}}>Hidden</a>
+            <div className={css(styles.middleBox, styles.bringToFront)} style={{position: 'absolute'}}>
                 <h1 className={css(styles.bigFont, styles.fontColoring)}>Contact</h1>
 
                 <p className={css(styles.textFormat, styles.fontColoring)}>Interested in my work and skills? Feel free to contact me.</p>
@@ -29,16 +18,16 @@ function Contact() {
                 <div className={css(styles.linksBox)} >
                     <a href='https://www.linkedin.com/in/jonbaxt/' rel="noopener noreferrer" target='_blank' >
                         <img src={linkedin} className={css(styles.svg2)} />
-
-                        {/*LinkedIn*/}
-                        {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faLinkedin} />*/}
                     </a>
                     <a href='https://github.com/jonbaxt' rel="noopener noreferrer" target='_blank' >
                         <img src={github} className={css(styles.svg)} />
-                        {/*<FontAwesomeIcon className={css(styles.linkSizing)} icon={faGithub} />*/}
                     </a>
                 </div>
             </div>
+            <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg" style={{position: 'absolute', width: '120%', zIndex: -1}}>
+                <source src={backgroundVideoContact} type="video/mp4" style={{zIndex: -1}} />
+
+            </video>
         </div>
     )
 }
@@ -47,8 +36,6 @@ const styles = StyleSheet.create({
     main: {
         width: '100%',
         height: '100vh',
-        backgroundImage: `url(${tech1})`,
-        backgroundSize: '100%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -59,14 +46,11 @@ const styles = StyleSheet.create({
     },
     middleBox: {
         background: 'rgba(13,255,186,0.4)',
-        // background: 'rgb(248, 248, 255)',
         boxShadow: '1px 1px 9px grey',
         width: '90%',
-        // height: '400px',
         paddingBottom: '40px',
     },
     bigFont: {
-        // zIndex: '10',
         textAlign: 'center',
         fontSize: '80px',
         '@media(max-width: 850px)': {
