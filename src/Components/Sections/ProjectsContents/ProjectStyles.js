@@ -12,7 +12,6 @@ export const projectStyles = StyleSheet.create({
     },
     container: {
         background: 'rgba(13,255,186,0.4)',
-        // background: 'rgb(248, 248, 255)',
         width: '95%',
         marginTop: '25px',
         paddingTop: '20px',

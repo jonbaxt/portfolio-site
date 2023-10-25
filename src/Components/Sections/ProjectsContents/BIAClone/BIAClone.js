@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import { css } from 'aphrodite';
 
-import { BIAText1, BIAText2, BIAText3, BIATechHead, BIATechUsed, BIAVidHead, BIAContributionHead, BIAContributeBullet1, BIAContributeBullet2, BIAContributeBullet3, BIAContributeBullet4, BIAContributeBullet5, BIALiveSiteLink } from './BIAText';
+import { BIAText1, BIAText2, BIAText3, BIATechHead, BIATechUsed, BIAVidHead, BIAContributionHead, BIAContributeBullet1, BIAContributeBullet2, BIAContributeBullet3, BIAContributeBullet4, BIAContributeBullet5
+    // , BIALiveSiteLink
+} from './BIAText';
 import { projectStyles } from "../ProjectStyles";
 
 function BIAClone() {
@@ -14,6 +16,9 @@ function BIAClone() {
                 <p className={css(projectStyles.paragraphs)}>{BIAText1()}</p>
                 <p className={css(projectStyles.paragraphs)}>{BIAText2()}</p>
                 <p className={css(projectStyles.paragraphs)}>{BIAText3()}</p>
+                <p className={css(projectStyles.paragraphs)}>With it being a number of years since this project was built, Build in Amsterdam have changed their portfolio site
+                    immensely with a lot of their images and content not available anymore. The current iteration of this project uses other images to still demonstrate the
+                    recreated animation, but the original intended design is still contained in this video presentation of the site.</p>
 
                 <p className={css(projectStyles.technologiesHeader)}>{BIATechHead()}</p>
                 <p className={css(projectStyles.technologiesList)}>{BIATechUsed()}</p>

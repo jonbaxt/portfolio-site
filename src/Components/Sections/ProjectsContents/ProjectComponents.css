@@ -1,0 +1,14 @@
+
+.picContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.picContainerByColumn {
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerImageSized {
+    width: 90%;
+}

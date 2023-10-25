@@ -17,10 +17,10 @@ function Contact() {
                 <p className={css(styles.textFormat, styles.fontColoring)}>jonbaxt@gmail.com</p>
                 <div className={css(styles.linksBox)} >
                     <a href='https://www.linkedin.com/in/jonbaxt/' rel="noopener noreferrer" target='_blank' >
-                        <img src={linkedin} className={css(styles.svg2)} />
+                        <img src={linkedin} alt={'linkedin'} className={css(styles.svg2)} />
                     </a>
                     <a href='https://github.com/jonbaxt' rel="noopener noreferrer" target='_blank' >
-                        <img src={github} className={css(styles.svg)} />
+                        <img src={github} alt={'github'} className={css(styles.svg)} />
                     </a>
                 </div>
             </div>

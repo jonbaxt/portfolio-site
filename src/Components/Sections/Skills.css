@@ -1,0 +1,20 @@
+
+.bottomBlurbOnSkills {
+    margin: 64px;
+}
+
+.logoContainerWithText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background: rgba(13,255,186,0.4);
+    boxShadow: 1px 1px 9px grey;
+}
+.logoContainerWithText>img {
+    margin: 0;
+    padding: 0;
+}

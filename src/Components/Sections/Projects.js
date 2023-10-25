@@ -3,22 +3,22 @@ import { StyleSheet, css } from 'aphrodite';
 
 import ServedUp from './ProjectsContents/ServedUpSurveys/ServedUp';
 import BIAClone from './ProjectsContents/BIAClone/BIAClone';
-// import ParentalGaming from './ProjectsContents/ParentalGaming/ParentalGaming';
-// import NSCClone from './ProjectsContents/NSCClone/NSCClone';
-// import InventoryWarehouse from './ProjectsContents/InventoryWarehouse/InventoryWarehouse';
+import ParentalGaming from './ProjectsContents/ParentalGaming/ParentalGaming';
+import NSCClone from './ProjectsContents/NSCClone/NSCClone';
+import InventoryWarehouse from './ProjectsContents/InventoryWarehouse/InventoryWarehouse';
 
 function Projects() {
 
     return (
         <div className={css(styles.main)}>
-            <a href='/' name={'projectsSection'} style={{visibility: 'hidden'}}>Hidden</a>
             <h1 className={css(styles.bigFont, styles.under)}>Projects</h1>
+            <h2 className={css(styles.smallFont) + ' centered'}>Not all sites have working demos anymore, the code is still available to view on my <a href={'https://github.com/jonbaxt'} target='_blank' rel='noopener noreferrer'>GitHub Account</a></h2>
 
             <ServedUp />
             <BIAClone />
-            {/*<InventoryWarehouse />*/}
-            {/*<ParentalGaming />*/}
-            {/*<NSCClone />*/}
+            <InventoryWarehouse />
+            <ParentalGaming />
+            <NSCClone />
         </div>
     )
 }
@@ -26,14 +26,9 @@ function Projects() {
 const styles = StyleSheet.create({
     main: {
         width: '100%',
-        // height: '200vh',
-        // borderTop: '3px dashed blue',
-        // borderBottom: '3px dashed blue',
         color: 'black',
-        // boxShadow: '2px 2px 4px black',
     },
     bigFont: {
-        // zIndex: '10',
         fontSize: '80px',
         '@media(max-width: 850px)': {
             fontSize: '60px',

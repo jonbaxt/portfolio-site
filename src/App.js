@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    top: 0,
   },
   linkStyled: {
     textDecorationLine: 'none',
